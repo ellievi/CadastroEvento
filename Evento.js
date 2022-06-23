@@ -13,6 +13,7 @@ if (dataAtual < dataEvento) {
 }
     else if (dataAtual > dataEvento) {
     console.log("Cadastro não permitido por data inválida")
+    process.exit()
 }
  
 let idade = parseInt(prompt("Digite sua idade: "))
@@ -22,6 +23,7 @@ if (idade >= 18) {
 }
     else if (idade < 18) {
         console.log("Cadastro não permitido. Idade mínina menor que a permitida.")
+        process.exit()
     }
 
 let listaParticipantes = [98];
@@ -32,5 +34,6 @@ if (listaParticipantes <=100) {
 }
 else if (listaParticipantes >100) {
     console.log("Cadastro não concluído. Número de participantes por evento excedido.")
+    process.exit()
 }
 
